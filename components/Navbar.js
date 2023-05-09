@@ -18,8 +18,8 @@ export const Navbar = () => {
             <nav>
                 <div className={styles.nav}>
                     {MENU_LIST.map((item, idx) => (
-                        <div className={styles.navItem}>
-                        <NavItem name={item.text} href= {item.href} key={item.text}/>
+                        <div key={idx}className={styles.navItem}>
+                        <NavItem name={item.text} href= {item.href} key={idx}/>
                         </div>
                     ))}
                 </div>
