@@ -4,7 +4,6 @@ import background from '../public/FrontPhoto.jpg'
 import {data} from '../public/data.js'
 
 export const HomePageHero = () => {
-    console.log(data.description)
     return <div 
         className={styles.container}  
         style={{
