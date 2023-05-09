@@ -42,7 +42,7 @@ export default function Home() {
         <Navbar />
         <HomePageHero />
         <Description description={data.description} />
-        <div className={styles.experience}>
+        <div className={styles.experience} id="projects">
         <Project 
           image={photos.experience1}
           brand='SUNGLASS.LA'

@@ -24,4 +24,7 @@
 
 .experience {
     display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
+
