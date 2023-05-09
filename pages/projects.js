@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar"
 
-const Projects = () => {
+const Projects = ({image,brand}) => {
     return (
     <div>
         <main>

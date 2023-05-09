@@ -1,0 +1,50 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+}
+
+.box>.brand {
+    visibility: hidden;
+}
+.box:hover > .brand {
+    visibility: visible;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    padding: 10px
+}
+
+.image {
+    position: absolute;
+    opacity: .7;
+}
+
+.image:hover {
+    opacity: 1;
+
+}
+
+@media (max-width: 700px) {
+    .box {
+        min-height: 300px;
+    }
+ 
+    .box > .brand {
+        visibility: visible;
+    }
+    
+    .brand {
+        font-size: 20px;
+        flex-wrap:wrap;
+    }
+
+}

@@ -9,7 +9,9 @@
 // .heroBanner {
 //     background-color: #ebf2f5;
 // }
-
+.main {
+    background-color: #000;
+}
 .background {
     display: flex;
     align-items: center;
@@ -18,4 +20,8 @@
     padding: 60px 30px;
     
     color: black;
+}
+
+.experience {
+    display: flex;
 }
