@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;    
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        margin: 20px;
+        padding: 40px;
+        min-width: 300px;
+        max-width: 40%;
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        left: 100px;
+        
+        .title {
+            font-size: 30px ;
+            font-weight: 500;
+            word-spacing: 3px;
+        }
+        .body {
+            padding-top: 10px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 220px;
+        }
+    }
+    
+    .image {
+        max-width: 600px;
+        height:auto;
+        padding-right: 100px;
+    }
+}

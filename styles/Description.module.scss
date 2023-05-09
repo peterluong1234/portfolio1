@@ -1,0 +1,38 @@
+.container {
+    color: white;
+    background-color: rgb(16, 16, 16);
+}
+
+.description {
+    font-size: 50px;
+    // height: auto;
+    padding: 50px 200px 20px 300px;
+    width: 90%;
+}
+
+.about {
+    padding: 0 0px 50px 300px;
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .description {
+        font-size: 40px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .about {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .description {
+        font-size: 30px;
+        padding-right: 100px;
+        padding-left: 50px;
+    }
+    .about {
+        padding-left: 50px;
+    }
+}
