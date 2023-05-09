@@ -4,8 +4,8 @@ import styles from '../styles/Navbar.module.scss'
 const MENU_LIST = [
     {text: "Home", href: '/'},
     {text: "About", href: '/about'},
-    {text: "Projects", href: '#projects'},
-    // {text: "Github", href: 'https://github.com/peterluong1234'},
+    // {text: "Projects", href: '/projects'},
+    {text: "Github", href: 'https://github.com/peterluong1234'},
     {text: "LinkedIn", href: 'https://www.linkedin.com/in/peter-luong-677530a9/'},
 ]
 

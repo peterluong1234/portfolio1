@@ -4,24 +4,14 @@ import styles from '../styles/Home.module.scss'
 import { data } from '../public/data'
 import { Header } from '../components/Header.js'
 import { HeroBanner } from '../components/HeroBanner.js'
-import { HomePageHero } from '../components/HomePageHero'
+import { HeroSection } from '../components/HeroSection'
 import { Navbar } from '../components/Navbar'
 import { Description } from '../components/Description'
 import { Project } from '../components/Project'
 import * as photos from '../public/images'
 import photo1 from '../public/images/experience/image1.png'
+import heroPhoto from '../public/FrontPhoto.jpg'
 
-const ABOUT_ME = 'Graphic Designer turned Full Stack Developer with a passion for the outdoors'
-const BUTTONS = [
-    {
-      name: 'GitHub',
-      link: 'https://github.com/peterluong1234',
-    },
-    {
-      name: 'Resume',
-      link: 'https://docs.google.com/document/d/1-Yt_XAF8nG1S9y_Qc3ANVqkjWXiLJ9uub8ifjAo188s/edit?usp=sharing'
-    }
-  ]
 
 const BACKGROUND = [
   {line: 'Software developer with a background in graphic design with a drive for working on large scale projects and breaking each process down into concise actions to improve efficiency.'},
@@ -40,27 +30,30 @@ export default function Home() {
       
       <main className={styles.main}>
         <Navbar />
-        <HomePageHero />
+        <HeroSection 
+          heroPhoto={heroPhoto}
+          text='Peter Luong'
+        />
         <Description description={data.description} />
         <div className={styles.experience} id="projects">
-        <Project 
-          image={photos.experience1}
-          brand='SUNGLASS.LA'
-        />
-        <Project 
-          image={photos.experience3}
-          brand='Fashion Goose Boutique'
-        />
-        </div>
+          <Project 
+            image={photos.experience1}
+            brand='SUNGLASS.LA'
+          />
+          <Project 
+            image={photos.experience3}
+            brand='Fashion Goose Boutique'
+          />
+          </div>
         <div className={styles.experience}>
-        <Project 
-          image={photos.experience2}
-          brand='Project Child Hunger'
-        />
-        <Project 
-          image={photos.experience4}
-          brand='zeroUV'
-        />
+          <Project 
+            image={photos.experience2}
+            brand='Project Child Hunger'
+          />
+          <Project 
+            image={photos.experience4}
+            brand='zeroUV'
+          />
         </div>
       </main>
 

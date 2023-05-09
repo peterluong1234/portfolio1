@@ -15,13 +15,19 @@
     text-decoration: underline;
 }
 
+.experience {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 100px 0px 10px 300px;
+}
+
 @media (max-width: 1200px) {
     .description {
         font-size: 40px;
         padding-right: 100px;
         padding-left: 100px;
     }
-    .about {
+    .experience {
         padding-left: 100px;
     }
 }
@@ -32,7 +38,7 @@
         padding-right: 100px;
         padding-left: 50px;
     }
-    .about {
+    .experience {
         padding-left: 50px;
     }
 }

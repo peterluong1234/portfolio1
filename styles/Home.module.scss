@@ -10,21 +10,16 @@
 //     background-color: #ebf2f5;
 // }
 .main {
-    background-color: #000;
+    background-color: rgb(16, 16, 16);
 }
 .background {
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: #c5deea;
-    padding: 60px 30px;
-    
-    color: black;
+    color: rgb(16, 16, 16);
 }
 
 .experience {
     display: flex;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
