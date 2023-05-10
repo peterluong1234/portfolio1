@@ -18,7 +18,7 @@ const BACKGROUND = [
   {line: 'I bring my passion for innovation into each project through an enthusiastic approach gauge to deliver a unique and personal experience for every client.'},
   {line: 'Leveraging a strong background in graphic design and project management allows me to take a step back and view projects from both a creative and logistical standpoint.'}
 ]
-
+console.log(data.description)
 export default function Home() {
   return (
     <div>
@@ -34,7 +34,7 @@ export default function Home() {
           heroPhoto={heroPhoto}
           text='Peter Luong'
         />
-        <Description description={data.description} />
+        <Description data={data.description} />
         <div className={styles.experience} id="projects">
           <Project 
             image={photos.experience1}

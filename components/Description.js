@@ -1,11 +1,28 @@
 import styles from "../styles/Description.module.scss"
 
-export const Description = ({description}) => {
-    const experienceIntro = 'Here are some of the brands and organizations that I\'ve worked with';
+export const Description = ({data}) => {
     return(
         <div className={styles.container}>
-            <div className={styles.description}>{description}</div>
-            <div className={styles.experience}>{experienceIntro}</div>
+            <div className={styles.header}>{data.header}</div>
+            {   
+                data.experienceIntro ?
+                <div className={styles.experience}>{data.experienceIntro}</div>
+                : ''
+            }
+            {
+                data.paragraph ?
+                data.paragraph.map((p, idx) => (
+                    <div className={styles.paragraph} key={idx}>{p}<br /></div>
+                )) 
+                :
+                ""
+            }
+            {
+                data.paragraph? 
+                <div className={styles.spacer}></div>
+                :
+                ""
+            }
         </div>
     )
 }

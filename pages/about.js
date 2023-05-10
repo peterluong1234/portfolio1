@@ -1,19 +1,14 @@
+import { data } from '../public/data'
+import { Description } from '../components/Description';
 import { HeroSection } from '../components/HeroSection';
-import {HeroBanner} from '../components/HeroBanner';
+import { HeroBanner } from '../components/HeroBanner';
 import { Navbar } from '../components/Navbar';
-import heroImage from '../public/images/about/profile.jpeg'
+import { Gallery } from '../components/Gallery';
+import heroImage from '../public/images/about/profile.jpeg';
+import  * as photos  from '../public/images/'
+import Image from 'next/image'
 
-const ABOUT_ME = 'Graphic Designer turned Full Stack Developer with a passion for the outdoors'
-const BUTTONS = [
-    {
-      name: 'GitHub',
-      link: 'https://github.com/peterluong1234',
-    },
-    {
-      name: 'Resume',
-      link: 'https://docs.google.com/document/d/1-Yt_XAF8nG1S9y_Qc3ANVqkjWXiLJ9uub8ifjAo188s/edit?usp=sharing'
-    }
-  ]
+console.log(photos.ABOUT)
 
 export default function About() {
     return <div>
@@ -22,5 +17,8 @@ export default function About() {
             heroPhoto={heroImage}
             text='About Me'
         />
+        
+        <Description data={data.aboutMe} />
+        <Gallery />
     </div>
 }
