@@ -2,6 +2,7 @@ import experience1 from './experience/image1.png'
 import experience2 from './experience/image2.png'
 import experience3 from './experience/image3.png'
 import experience4 from './experience/image3.jpg'
+import project1 from './project/sgla_banner.png'
 
 const ABOUT = {
     image1: require('./about/aboutme - 1.jpeg'),
@@ -32,4 +33,5 @@ export  {
     experience3,
     experience4,
     ABOUT,
+    project1
 }

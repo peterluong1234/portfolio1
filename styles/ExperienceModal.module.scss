@@ -1,0 +1,43 @@
+.modal {
+    z-index: 3;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    background-color: black;
+    width: 97vw;
+    height: 97vh;
+    color: white;
+    opacity: .9;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+    overflow-y: initial;
+}
+
+.button {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    background-color: black;
+    color: white;
+    border: 0px;
+    font-size: 50px;
+    
+}
+
+.description {
+    overflow-y: auto;
+}
+
+.info{
+    overflow-y: auto;
+    height: 40vh;
+}
+
+.button:hover {
+    color:rgb(222, 222, 222);
+}
