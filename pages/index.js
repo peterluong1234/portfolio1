@@ -42,53 +42,64 @@ export default function Home() {
         />
         <Description data={data.description} />
         <div className={styles.experience} id="projects">
+          { /* SGLA */ }
           <Project 
             image={photos.experience1}
             brand='SUNGLASS.LA'
             setState={setViewSGLA}
             state={viewSGLA}
           />
-          {viewSGLA ? <ExperienceModal 
-            brand='SUNGLASS.LA'
+
+          {/* {viewSGLA ? <ExperienceModal 
             setState={setViewSGLA}
             state={viewSGLA}
             data={data.sgla}
-          /> : ''}
+            image={photos.PROJECT.sgla}
+          /> : ''} */}
+          { /* Fashion Goose Boutique */ }
           <Project 
             image={photos.experience3}
             brand='Fashion Goose Boutique'
             setState={setViewGoose}
             state={viewGoose}
           />
-          {viewGoose ? <ExperienceModal 
-              brand='Fashion Goose Boutique'
+          {/* {viewGoose ? <ExperienceModal 
               setState={setViewGoose}
               state={viewGoose}
-          /> : ''}
+              data={data.goose}
+              
+          /> : ''} */}
           </div>
+
         <div className={styles.experience}>
+          { /* Project Child Hunger */ }
           <Project 
             image={photos.experience2}
             brand='Project Child Hunger'
             setState={setViewChild}
             state={viewChild}
           />
-          {viewChild ? <ExperienceModal 
-            brand='Project Child Hunger'
+          {/* {viewChild ? <ExperienceModal 
+            data={data.childHunger}
+            image={photos.PROJECT.childHunger}
             setState={setViewChild}
             state={viewChild}
-          /> : ''}
+          /> : ''} */}
+
+          { /* zeroUV */ }
           <Project 
             image={photos.experience4}
             brand='zeroUV'
             setState={setViewZeroUV}
             state={viewZeroUV}
           />
-          {viewZeroUV ? <ExperienceModal 
+          {/* {viewZeroUV ? <ExperienceModal 
+            data={data.zeroUV}
+            image={photos.PROJECT.zeroUV}
             brand='zeroUV'
             setState={setViewZeroUV}
             state={viewZeroUV}
-          /> : ''}
+          /> : ''} */}
         </div>
             
       </main>

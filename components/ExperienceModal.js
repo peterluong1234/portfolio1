@@ -1,14 +1,14 @@
 import styles from '../styles/ExperienceModal.module.scss';
+import Image from 'next/image'
 
-export const ExperienceModal = ({ brand,setState,state,data }) => {
-    
+export const ExperienceModal = ({ image,setState,state,data }) => {
     return(<div className={styles.modal}>
-            <div className={styles.image}><img src={data.image} /></div>
+                <Image className={styles.image} src={image} />
             <div className={styles.info}>
-            <div>{data.brand}</div>
-            <div>{data.role}</div>
-            <div>{data.timeline}</div>
-            <div className={styles.description}>{data.description}</div>
+                <div>{data.brand}</div>
+                <div>{data.role}</div>
+                <div>{data.timeline}</div>
+                <div className={styles.description}>{data.description}</div>
             </div>
         <button className={styles.button} onClick={()=>setState(!state)}>&times;</button>
     </div>)

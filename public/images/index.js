@@ -27,11 +27,17 @@ const ABOUT = {
     
 }
 
+const PROJECT = {
+    sgla: require('./project/SGLA.jpg'),
+    childHunger: require('./project/ChildHunger.jpg'),
+    zeroUV: require('./project/zeroUV.jpg'),
+}
+
 export  {
     experience1,
     experience2,
     experience3,
     experience4,
     ABOUT,
-    project1
+    PROJECT,
 }
