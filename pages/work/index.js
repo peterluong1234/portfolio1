@@ -1,6 +1,6 @@
-import { Navbar } from "../components/Navbar"
+import { Navbar } from "../../components/Navbar"
 
-const Projects = ({image,brand}) => {
+const Work = ({image,brand}) => {
     return (
     <div>
         <main>
@@ -11,4 +11,4 @@ const Projects = ({image,brand}) => {
     )
 }
 
-export default Projects
+export default Work

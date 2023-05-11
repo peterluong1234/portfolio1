@@ -5,21 +5,19 @@ import { data } from '../public/data';
 import { Header } from '../components/Header.js';
 import { HeroBanner } from '../components/HeroBanner.js';
 import { HeroSection } from '../components/HeroSection';
-import { Navbar } from '../components/Navbar';
 import { Description } from '../components/Description';
 import { Project } from '../components/Project';
 import { ExperienceModal } from '../components/ExperienceModal';
 import * as photos from '../public/images';
-import photo1 from '../public/images/experience/image1.png';
 import heroPhoto from '../public/FrontPhoto.jpg';
 import React from 'react';
 import { useState } from 'react';
 
-const BACKGROUND = [
-  {line: 'Software developer with a background in graphic design with a drive for working on large scale projects and breaking each process down into concise actions to improve efficiency.'},
-  {line: 'I bring my passion for innovation into each project through an enthusiastic approach gauge to deliver a unique and personal experience for every client.'},
-  {line: 'Leveraging a strong background in graphic design and project management allows me to take a step back and view projects from both a creative and logistical standpoint.'}
-]
+// const BACKGROUND = [
+//   {line: 'Software developer with a background in graphic design with a drive for working on large scale projects and breaking each process down into concise actions to improve efficiency.'},
+//   {line: 'I bring my passion for innovation into each project through an enthusiastic approach gauge to deliver a unique and personal experience for every client.'},
+//   {line: 'Leveraging a strong background in graphic design and project management allows me to take a step back and view projects from both a creative and logistical standpoint.'}
+// ]
 
 
 
@@ -38,7 +36,6 @@ export default function Home() {
       </Head>
       
       <main className={styles.main}>
-        <Navbar />
         <HeroSection 
           heroPhoto={heroPhoto}
           text='Peter Luong'
@@ -93,10 +90,10 @@ export default function Home() {
             state={viewZeroUV}
           /> : ''}
         </div>
+            
       </main>
-
-      <footer className={styles.footer}>
-      </footer>
+      {/* <footer className={styles.footer}>
+      </footer> */}
     </div>
   )
 }
