@@ -4,11 +4,7 @@ export const Description = ({data}) => {
     return(
         <div className={styles.container}>
             <div className={styles.header}>{data.header}</div>
-            {   
-                data.experienceIntro ?
-                <div className={styles.experience}>{data.experienceIntro}</div>
-                : ''
-            }
+
             {
                 data.paragraph ?
                 data.paragraph.map((p, idx) => (
@@ -22,6 +18,11 @@ export const Description = ({data}) => {
                 <div className={styles.spacer}></div>
                 :
                 ""
+            }
+                        {   
+                data.experienceIntro ?
+                <div className={styles.experience}>{data.experienceIntro}</div>
+                : ''
             }
         </div>
     )

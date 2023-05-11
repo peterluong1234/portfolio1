@@ -1,9 +1,10 @@
 .container {
     grid-template-areas: 
-    'a b'
+    'b b'
     'a c'
-    'd e'
-    'f e';
+    'a c'
+    'd d'
+    'e e';
 
     // grid-template-rows: repeat(3,1fr);
     display: grid;
@@ -34,6 +35,18 @@
 
 .imageA {
     grid-area: a;
+}
+
+.imageB {
+    grid-area: b;
+}
+
+.imageC {
+    grid-area: c;
+}
+
+.imageD {
+    grid-area: d;
 }
 
 .imageE {

@@ -10,7 +10,8 @@ export const data = {
         paragraph: [
             'Peter loves the outdoors. Raised as a kid of the streets, he spent most of his youth riding his bike with neighborhood kids, skateboarding, and playing basketball.',
             ' This eventually turned into a passion for an active lifestyle. His current hobbies include snowboarding, bouldering, cycling, mountain biking, gymming, playing piano and singing.',
-        ]
+        ],
+        experienceIntro: 'Here are some images that I\'ve taken throughout my adventures',
     },
     sgla: {
         image: experience1,

@@ -17,7 +17,6 @@ export default function About() {
             heroPhoto={heroImage}
             text='About Me'
         />
-        
         <Description data={data.aboutMe} />
         <Gallery />
     </div>
