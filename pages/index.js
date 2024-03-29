@@ -8,6 +8,7 @@ import { HeroSection } from '../components/HeroSection';
 import { Description } from '../components/Description';
 import { Project } from '../components/Project';
 import { ExperienceModal } from '../components/ExperienceModal';
+import ContactForm from '../components/ContactForm/ContactForm'
 import * as photos from '../public/images';
 import heroPhoto from '../public/FrontPhoto.jpg';
 import React from 'react';
@@ -102,9 +103,10 @@ export default function Home() {
           /> : ''} */}
         </div>
             
+          <ContactForm />
       </main>
-      {/* <footer className={styles.footer}>
-      </footer> */}
+      <footer className={styles.footer}>
+      </footer>
     </div>
   )
 }
