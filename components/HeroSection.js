@@ -11,7 +11,8 @@ export const HeroSection = ({heroPhoto,text}) => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }}>
-                <div className={styles.text}>{text}</div>
+        <div className={styles.text}>{text}</div>
+        {/* <div>Sometime's</div> */}
 
     </div>
 }
