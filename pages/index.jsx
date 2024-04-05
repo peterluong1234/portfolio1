@@ -9,6 +9,7 @@ import { HeroSection } from '../components/HeroSection';
 import { Description } from '../components/Description';
 import { Project } from '../components/Project';
 import { ExperienceModal } from '../components/ExperienceModal';
+import ContactForm from '../components/ContactForm/ContactForm';
 import * as photos from '../public/images/index';
 import heroPhoto from '../public/FrontPhoto.jpg';
 import React from 'react';
