@@ -2,13 +2,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import { data } from '../public/data';
-import { Header } from '../components/Header.js';
-import { HeroBanner } from '../components/HeroBanner.js';
+import { Header } from '../components/Header';
+import { HeroBanner } from '../components/HeroBanner';
 import { HeroSection } from '../components/HeroSection';
 import { Description } from '../components/Description';
 import { Project } from '../components/Project';
 import { ExperienceModal } from '../components/ExperienceModal';
-import * as photos from '../public/images';
+import * as photos from '../public/images/index';
 import heroPhoto from '../public/FrontPhoto.jpg';
 import React from 'react';
 import { useState } from 'react';
@@ -43,33 +43,13 @@ export default function Home() {
         <Description data={data.description} />
         <div className={styles.experience} id="projects">
           { /* SGLA */ }
-          <Project 
-            image={photos.experience1}
-            brand='SUNGLASS.LA'
-            setState={setViewSGLA}
-            state={viewSGLA}
-          />
+          <Project image={photos.experience1} brand='SUNGLASS.LA' setState={setViewSGLA} state={viewSGLA} />
+          {viewSGLA ? <ExperienceModal setState={setViewSGLA} state={viewSGLA} data={data.sgla} image={photos.PROJECT.sgla} /> : ''}
 
-          {/* {viewSGLA ? <ExperienceModal 
-            setState={setViewSGLA}
-            state={viewSGLA}
-            data={data.sgla}
-            image={photos.PROJECT.sgla}
-          /> : ''} */}
           { /* Fashion Goose Boutique */ }
-          <Project 
-            image={photos.experience3}
-            brand='Fashion Goose Boutique'
-            setState={setViewGoose}
-            state={viewGoose}
-          />
-          {/* {viewGoose ? <ExperienceModal 
-              setState={setViewGoose}
-              state={viewGoose}
-              data={data.goose}
-              
-          /> : ''} */}
-          </div>
+          <Project image={photos.experience3} brand='Fashion Goose Boutique' setState={setViewGoose} state={viewGoose} />
+          {viewGoose ? <ExperienceModal setState={setViewGoose} state={viewGoose} data={data.goose} /> : ''}
+        </div>
 
         <div className={styles.experience}>
           { /* Project Child Hunger */ }
@@ -79,12 +59,12 @@ export default function Home() {
             setState={setViewChild}
             state={viewChild}
           />
-          {/* {viewChild ? <ExperienceModal 
+          {viewChild ? <ExperienceModal 
             data={data.childHunger}
             image={photos.PROJECT.childHunger}
             setState={setViewChild}
             state={viewChild}
-          /> : ''} */}
+          /> : ''}
 
           { /* zeroUV */ }
           <Project 
@@ -93,13 +73,13 @@ export default function Home() {
             setState={setViewZeroUV}
             state={viewZeroUV}
           />
-          {/* {viewZeroUV ? <ExperienceModal 
+          {viewZeroUV ? <ExperienceModal 
             data={data.zeroUV}
             image={photos.PROJECT.zeroUV}
             brand='zeroUV'
             setState={setViewZeroUV}
             state={viewZeroUV}
-          /> : ''} */}
+          /> : ''}
         </div>
             
       </main>

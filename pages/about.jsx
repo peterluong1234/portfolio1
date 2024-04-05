@@ -5,7 +5,7 @@ import { HeroBanner } from '../components/HeroBanner';
 import { Navbar } from '../components/Navbar';
 import { Gallery } from '../components/Gallery';
 import heroImage from '../public/images/about/profile.jpeg';
-import  * as photos  from '../public/images/'
+import  * as photos  from '../public/images'
 import Image from 'next/image'
 
 console.log(photos.ABOUT)
