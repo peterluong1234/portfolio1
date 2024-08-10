@@ -40,12 +40,19 @@
 
 .brandBtn {
     width: fit-content;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     color: white;
     background-color: black;
     padding: 5px 10px;
     box-shadow: 2px 2px white;
     margin-top: 10px;
+    transition: .3s;
+}
+
+.brandBtn:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
 }
 
 .image {
