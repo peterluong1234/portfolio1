@@ -2,7 +2,7 @@ import experience1 from '../public/images'
 
 export const data = {
     description: {
-        header: `Peter Luong is an experienced Graphic Designer and Web Developer based in Orange County, CA who specializes in e-commerce design and marketing campaigns.`,
+        header: `Peter Luong is an experienced Software Engineer and Graphic Designer based in Orange County, CA who specializes in e-commerce.`,
         experienceIntro: 'Here are some of the brands and organizations that I\'ve worked with',
     },
     aboutMe: {
