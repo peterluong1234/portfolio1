@@ -1,0 +1,59 @@
+.pageContainer {
+  margin: 0 100px;
+}
+
+.headerContainer {
+  width: 100%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+
+  h1 {
+    font-size: clamp(1.5rem, 15vw, 10rem);
+    margin: 0;
+  }
+}
+
+.workContainer {
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+// .workContainer:hover {
+//   background-color: lightgray;
+// }
+
+.workHeaderContainer {
+  display: flex;
+  margin-left: 20vw;
+  justify-content: space-between;
+  padding: 20px;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.workHeaderContainer:hover {
+  h2, img {
+    transition: .15s;
+    opacity: .5;
+  }
+}
+
+.workTextContainer {
+  h2 {
+    margin-top: none;
+    margin-bottom: none;
+  }
+}
+
+.workContentContainer {
+  height: 0px;
+  overflow: hidden;
+  margin-left: 20vw;
+  transition: height .3s;
+  // padding: 20px;
+}
+
+.workContent {
+  padding: 20px;
+}

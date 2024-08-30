@@ -1,16 +1,11 @@
-.nav {
+.nav, .navBlack {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    position: fixed;
-    z-index: 1;
     width: 100%;
-    // margin: 20px 20px 0px 0px;
-    color: white;
-
 
     .navItem {
         // padding-left: 20px;
@@ -18,9 +13,21 @@
         font-size: 12px;
         letter-spacing: 1px;
     }
-    .navItem:hover {
-        color: rgb(227, 227, 227);
-    }
 
 }
 
+.nav {
+    color: white;
+    position: fixed;
+    z-index: 1;
+    .navItem:hover {
+        color: rgb(227, 227, 227);
+    }
+}
+
+.navBlack {
+    color: black;
+    .navItem:hover {
+        color: black;
+    }
+}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import { data } from '../public/data';
+import { Navbar } from '../components/Navbar';
 import { Header } from '../components/Header';
 import { HeroBanner } from '../components/HeroBanner';
 import { HeroSection } from '../components/HeroSection';
@@ -38,6 +39,7 @@ export default function Home() {
       </Head>
       
       <main className={styles.main}>
+        <Navbar />
         <HeroSection 
           heroPhoto={heroPhoto}
           text='Peter Luong'
