@@ -166,6 +166,14 @@ const Work = ({image,brand}) => {
                                 <div className={styles.workContent}>
                                 <hr></hr>
                                 <p>{workplace.description}</p>
+                                { workplace.tasks ? <h3>Tasks</h3> : null }
+                                    { workplace.tasks ? workplace.tasks.map((task,i) => (
+                                    <div key={i}>
+                                        <p>{task}</p>
+                                    </div>
+                                        ))
+                                        : null
+                                    }
                                 { workplace.projects ? <h3>Projects</h3> : null }
                                     { workplace.projects ? workplace.projects.map((project,i) => (
                                     <div key={i}>
