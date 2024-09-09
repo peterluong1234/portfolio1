@@ -173,7 +173,8 @@ const Work = ({image,brand}) => {
                             <div className={ styles.workHeaderContainer }>
                                 <div className={styles.workTextContainer}>
                                     <h2>{workplace.companyName}</h2>
-                                    <small>{workplace.role}</small>
+                                    <p>{workplace.role}</p>
+                                    <small>{workplace.period}</small>
                                 </div>
                                 <img src="https://cdn.prod.website-files.com/66476c64e241589e9d182b69/668ccdcf8c39cf84da6bd553_plus.svg" alt="" />
                             </div>
