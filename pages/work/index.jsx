@@ -132,7 +132,8 @@ const Work = ({image,brand}) => {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                setWork(data);
+                const sortedByDescending = data.sort((a,b) => new Date(b.startDate) - new Date(a.startDate))
+                setWork(sortedByDescending);
             } catch (e) {
                 console.error('Failed to fetch jobs:', error)
             }
