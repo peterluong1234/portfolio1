@@ -1,30 +1,28 @@
 .container {
-    // color: white;
-    // background-color: rgb(16, 16, 16);
+    width: 100%;
+    max-width: 1200px;
+    padding: 25px 45px;
+    margin: 0 auto;
 }
 
 .header {
     font-size: 50px;
-    // height: auto;
-    padding: 50px 200px 50px 300px;
-    width: 90%;
+    margin-bottom: 50px;
 }
 
 .about {
-    padding: 0 0px 50px 200px;
     text-decoration: underline;
+    margin-bottom: 50px;
 }
 
 .experience {
     font-size: 20px;
-    font-weight: 400;
-    padding: 50px 0px 10px 300px;
+    font-weight: 500;
 }
 
 .paragraph {
     font-size: 20px;
-    padding: 0px 00px 20px 300px;
-    width: 70%;
+    margin-bottom: 50px;
 }
 
 .spacer {
@@ -34,28 +32,11 @@
 @media (max-width: 1200px) {
     .header {
         font-size: 40px;
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-    .experience {
-        padding-left: 100px;
-    }
-    .paragraph {
-        padding-left: 100px;
     }
 }
 
 @media (max-width: 800px) {
     .header {
         font-size: 30px;
-        padding-right: 100px;
-        padding-left: 50px;
-        padding-bottom: 30px;
-    }
-    .experience {
-        padding-left: 50px;
-    }
-    .paragraph {
-        padding-left: 50px;
     }
 }
