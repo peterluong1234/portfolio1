@@ -18,6 +18,12 @@ export const Accordion = ({ work }) => {
 		return null;
 	}
 
+	if (loading) {
+		return (<>
+		
+		</>)
+	}
+
   return (
     <>
       {work.map((workplace, idx) => (
