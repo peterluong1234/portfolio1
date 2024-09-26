@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export const Accordion = ({ work }) => {
   const [expandedWork, setExpandedWork] = useState({});
+	const [loading, setLoading] = useState(false);
 
   const toggleWorkItem = (index) => {
     setExpandedWork((prevExpanded) => ({
@@ -10,6 +11,13 @@ export const Accordion = ({ work }) => {
       [index]: !prevExpanded[index],
     }));
   };
+
+	if (work) {
+		setLoading(true);
+	} else if (work === null) {
+		return null;
+	}
+
   return (
     <>
       {work.map((workplace, idx) => (
