@@ -6,20 +6,22 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    // background-image: url("/images/FrontPhoto.jpg");
-    // background-size: cover;
 }
 
-.text {
+.header {
     font-size: clamp(1.5rem, 15vw, 10rem);
     font-weight: 600;
     color: white;
-    // letter-spacing: .02em;
-    // height: auto;
+    transition: 1s;
+    margin: 0;
 }
 
-// @media (max-width: 991px) {
-//     .text {
-//         font-size: clamp(1vw + 5rem)
-//     }
-// }
+.hidden {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
