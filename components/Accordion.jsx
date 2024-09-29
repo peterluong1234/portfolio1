@@ -13,7 +13,7 @@ export const Accordion = ({ work }) => {
     }
   }, [work])
 
-  const toggleWorkItem = (index) => {
+  const toggleWorkItem = (index) => { 
     setExpandedWork((prevExpanded) => ({
       ...prevExpanded,
       [index]: !prevExpanded[index],
@@ -22,9 +22,23 @@ export const Accordion = ({ work }) => {
 
 	if (loading) {
 		return (<>
-      <div>Loading</div>
+      <div className={styles.workContainer}>
+      <div className={styles.workHeaderContainer}>
+            <div className={styles.workTextContainer}>
+              <h2>Loading</h2>
+              <p>Loading</p>
+              <small>Loading</small>
+            </div>
+            <img
+              src="https://cdn.prod.website-files.com/66476c64e241589e9d182b69/668ccdcf8c39cf84da6bd553_plus.svg"
+              alt=""
+            />
+            </div>
+      </div>
+
 		</>)
 	}
+
   return (
     <>
       {work.map((workplace, idx) => (
